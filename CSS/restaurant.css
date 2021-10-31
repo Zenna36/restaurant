@@ -1,0 +1,355 @@
+/* Global start---------------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    /* background-color: rgb(220, 228, 228); */
+}
+
+:root {
+    --headerTop: #DE483A;
+    --headerBtm: #FFF8CE;
+    --mainTp:#F5EEDC;
+    --mainBtm:#F9F5EA;
+    --greenIcon: #9A9F05;
+    --footerTp:#66635E;
+    --footerMd: #5C5954;
+    --footerBtm:#413E39;
+}
+
+.icon {
+    display: inline-block;
+    width: 2.2em;
+    height: 2.2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    padding: 2px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+}
+
+.row {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+
+
+/* GLobal end ------------------------------------------------------------------- */
+
+
+
+/* Header start ------------------------------------------------------------------ */
+
+.header {
+    color: white;
+    background-color: var(--headerTop);
+    /* outline: 5px solid rgb(255, 136, 0); */
+}
+
+.icon {
+    color: white;
+}
+
+.top-header {
+    /* border: 2px solid green; */
+}
+
+.header-nav {
+    background-color: rgb(231,152,147);
+    background: linear-gradient(180deg, rgba(231,152,147,1) 3%, rgba(222,72,58,1) 23%);
+    /* border: 2px solid yellow; */
+}
+
+.header-bottom {
+    color: black;
+    background-color: var(--headerBtm);
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+.header-nav-row {
+    padding-top: 10px;
+    height: 90px;
+}
+
+.header-nav h1 {
+    font-size: 55px;
+    margin: 0;
+}
+
+.nav-items {
+    font-size: 30px;
+}
+
+.nav-items ul {
+    margin: 0;
+    padding: 15px 0 0 0;
+}
+
+.nav-items .d-inline {
+    background-color: var(--headerTop);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: 2px solid var(--headerTop);
+}
+
+.nav-items li:hover {
+    background-color: var(--headerBtm);
+    color: black;
+    transition-duration: 350ms;
+    outline: 2px solid orange;
+}
+
+.header-bottom-row {
+    height: 90px;
+}
+
+.opening-text {
+    height: 50px;
+}
+
+.header-bottom h2 {
+    padding-top: 8px;
+    margin: 0;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.input-group {
+    padding-top: 30px;
+    height: 50px;
+}
+
+/* Header end -------------------------------------------------------------------- */
+
+
+
+/* carousel start ---------------------------------------------------------------------*/
+.carousel {
+    width: 1400px;
+}
+
+.carousel .container-fluid {
+    padding: 0;
+}
+
+.filter-image img {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+}
+
+.filter-wrapper {
+    position: relative;
+    height: 600px;
+}
+
+.filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6)
+    /* z-index: 1; */
+}
+
+.carousel-holder {
+    display: hide;
+}
+
+.carousel-item img {
+    width: 1410px;
+    height: 600px;
+}
+
+.carousel-img {
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .filter-image img {
+        height: 450px;
+    }
+    .filter-wrapper {
+        height: 450px;
+    }
+    .carousel-item img {
+        height: 450px;
+    }
+}
+
+@media (max-width: 425px) {
+    .filter-image img {
+        height: 300px;
+    }
+    .filter-wrapper {
+        height: 300px;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+.carousel-control-prev {
+    left: 90%;
+    top: 83%;
+    /* border: 4px solid rgb(12, 12, 12); */
+    height: 100px;
+    width: 50px;
+}
+
+.carousel-control-next {
+    top: 83%;
+    /* border: 4px solid rgb(22, 21, 21); */
+    height: 100px;
+    width: 50px;
+}
+
+.carousel .d-block.w-75 {
+    margin: 0 auto;
+}
+/* carousel end ----------------------------------------------------------------------*/
+
+
+
+/* main start ----------------------------------------------------------------------------*/
+
+.main-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--mainTp);
+    border: 2px solid white;
+}
+
+.main-top h3 {
+    color: var(--headerTop);
+    text-transform: uppercase;
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    width: 435px
+}
+
+.main-top p {
+    background-color: white;
+    padding: 10px;
+    width: 435px;
+}
+
+.box-shadow {
+    background: #ccc;
+    box-shadow: 4px 3px 8px 1px #969696;
+    -webkit-box-shadow: 4px 3px 8px 1px #969696;
+    width: 436px;
+    height: 362px;
+}
+
+.main-bottom {
+    background-color:#F9F5EA; 
+    padding-bottom: 15px;
+}
+
+.main-bottom .offer {
+    color: var(--greenIcon);
+    font-size: 20px;
+}
+
+.main-bottom .offer-bg {
+    color: var(--greenIcon);
+}
+
+.main-bottom .icon {
+    padding-left: -15px;
+}
+
+.icon-mug , .icon-spoon-knife , .icon-heart {
+    color: var(--greenIcon);
+    width: 45px;
+}
+
+.offerP {
+    margin-left: 15px;
+}
+
+.main-bottom h2 {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.main-bottom .container-fluid {
+    padding: 25px 0 25px 0;
+}
+
+/* main end ------------------------------------------------------------------------*/
+
+
+
+/* Footer start ------------------------------------------------------------------ */
+.footer {
+    color: rgb(209, 196, 196);
+    /* outline: 4px solid rgb(153, 13, 247); */
+}
+
+.footer-top {
+    background-color: var(--footerTp);
+    /* border: 3px solid green; */
+}
+
+.footer-top .container-fluid {
+    padding: 15px 0 15px 0;
+}
+
+.footer-top .col-md-2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer-middle {
+    background-color: #5C5954;
+    padding: 15px 0 15px 0;
+    /* border: 3px solid yellow; */
+}
+
+.footer-middle ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer-middle span {
+    color: lightblue;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    background-color: #413E39;
+    height: 100px;
+    /* border: 3px solid rgb(228, 56, 26); */
+}
+
+.footer-bottom h2 {
+    font-weight: bolder;
+}
+
+.footer-bottom .privacy-policy {
+    padding-top: 15px;
+}
+
+/* Footer end --------------------------------------------------------------------- */
